@@ -163,13 +163,16 @@
 \RequirePackage[margin=0.5in]{geometry}
 
 \newcommand{\floor}{\sfloor*}
-\newcommand{\F}{\Rightarrow}
 \newcommand{\B}{\Leftarrow}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\P}{\mathcal{P}}
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
 
 \newcommand{\ve}{\varepsilon}
 
@@ -191,10 +194,27 @@
 
 % Override bad default commands
 \renewcommand{\bar}[1]{\overline{#1}}
-\newcommand{\normeps}{\epsilon}
-\renewcommand{\epsilon}{\varepsilon}
+\let\baseeps\eps
+\let\epsiolon\varepsilon
+\let\varepsilon\baseeps
+\let\basephi\phi
+\let\phi\varphi
+\let\varphi\basephi
 
 \newcommand{\inv}[1]{#1^{-1}}
 
 \newcommand{\collab}[1]{\noindent \textbf{Collaborated with:} #1 \vspace{0.25cm}}
 \newcommand{\reflection}[1]{\vspace{0.5cm} \textbf{Self Reflection: } #1}
+
+% Various conveniences
+\newcommand{\lcm}{\text{lcm}}
+\newcommand{\where}{\ensuremath{\ | \ }}
+\renewcommand{\mod}{\text{mod}\ }
+\newcommand{\nsub}{\trianglelefteq}
+
+\newcommand{\infdiv}{D\infdivx}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+

@@ -32,8 +32,8 @@ sudo ln -f nvim/init.vim ~/.config/nvim/init.vim
 sudo ln -f vim/vimrc ~/.vimrc
 
 # Latex styles
-mkdir -p texmf/tex/latex
-sudo ln -f latex/betterpsets.cls texmf/tex/latex
-sudo ln -f latex/hmcpset.cls texmf/tex/latex
+mkdir -p ~/texmf/tex/latex
+sudo ln -f latex/betterpsets.cls ~/texmf/tex/latex
+sudo ln -f latex/hmcpset.cls ~/texmf/tex/latex
 
 # TODO: pacman package list, etc
