@@ -26,4 +26,14 @@ sudo ln -f scripts/decrease_brightness.sh ~/.config/scripts/decrease_brightness.
 mkdir ~/.config/texmaker
 sudo ln -f texmaker/config.ini ~/.config/texmaker/config.ini
 
-# TODO: Add: vim, latex styles, etc, pacman package list, etc
+# Vim and nvim
+mkdir ~/.config/nvim
+sudo ln -f nvim/init.vim ~/.config/nvim/init.vim
+sudo ln -f vim/vimrc ~/.vimrc
+
+# Latex styles
+mkdir -p texmf/tex/latex
+sudo ln -f latex/betterpsets.cls texmf/tex/latex
+sudo ln -f latex/hmcpset.cls texmf/tex/latex
+
+# TODO: pacman package list, etc
